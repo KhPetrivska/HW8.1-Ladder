@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Створити ladder (сходи) – об'єкт, який дозволяє підніматися вгору та спускатися:</p>
+let ladder = {<br>
+    up: function () { // підніматиме вас на одну сходинку<br>
+    },<br>
+    down: function () { // опускатиме вас на одну сходинку<br>
+    },<br>
+    showStep: function () { // показує поточну сходинку<br>
+    }<br>
+  };<br>
+</p>
+<p>Тепер, якщо нам потрібно зробити кілька послідовних викликів, ми можемо виконати це так:<br>
 
+    ladder.up();<br>
+    
+    ladder.up();<br>
+    
+    ladder.down();<br>
+    
+    ladder.showStep(); // 1</p>
+<p>Змініть код методів up, down і showStep таким Таким чином, щоб їх виклик можна було зробити по ланцюжку, наприклад:<br>
+
+    ladder.up().up().down().showStep(); // 1<br>
+    
+    Такий підхід широко використовується в бібліотеках JavaScript.</p>
+    
+</body>
+<script src="/index.js"></script>
+</html>
